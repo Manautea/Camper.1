@@ -2,12 +2,17 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #EEF8DC;
+    margin: 0;
+}
+.nav-cont{
+    display: flex;
 }
 .nav{
     display: flex;
     width: 1100px;
     justify-content: space-around;
     align-items: baseline;
+    max-height: 45px;
 }
 ul{
     display: flex;
@@ -15,10 +20,88 @@ ul{
     list-style-type: none;
 }
 .top{
-    background-image: url(images/yolande-conradie-q6U-UA6hgBo-unsplash\ \(1\).jpg);
-    width: 1270;
+    background-image: url(images/yolande-conradie-q6U-UA6hgBo-unsplash\ \(2\).jpg);
+    background-size: cover;
+    width: 100%;
     height: 100vh;
 }
-.top>p{
-    position: ;
+.top-desc{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5em;
+    max-width: 35%;
+}
+.top-desc>h3{
+    color: #090200;
+    font-size: 34px;
+}
+.top-desc>p{
+    font-size: 16px;
+    color:#FFFF;
+}
+.top-desc>button{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+button{
+    background-color: #B5CA8D;
+    color:black;
+    border-radius: 50px;
+    border-color: black;
+    border-width: 2px;   
+}
+
+.examples{
+    display: flex;
+    background-color: #231C07;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+    height: 90%vh;
+    flex-wrap: wrap;
+}
+.examples>div{
+
+}
+.examples>div img{
+    max-width: 250px;
+    height: auto;
+    margin-top: 20px;
+
+}
+.destinations{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.destinations>div img{
+    max-width: 277px;
+    height:auto;
+}
+.experience-cont{
+    background-color: #231C07;
+}
+.experiences{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.experiences>div{
+    max-width: 30%;
+    color:#EEF8DC;
+}
+.call{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+footer{
+    background-color: #231C07;
+    color:#EEF8DC;
+    width: 1100px;
+    justify-content: center;
 }
