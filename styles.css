@@ -3,10 +3,13 @@ body{
     flex-direction: column;
     background-color: #EEF8DC;
     margin: 0;
-    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    overflow-x: hidden;
 }
 .nav-cont{
     display: flex;
+    width: 100%;
 }
 .nav{
     display: flex;
@@ -23,14 +26,13 @@ ul{
 .top{
     background-image: url(images/yolande-conradie-q6U-UA6hgBo-unsplash\ \(2\).jpg);
     background-size: cover;
-    background-size: 100%;
     width: 100%;
     height: 100vh;
 }
 .top-desc{
     display: flex;
     flex-direction: column;
-    margin-left: 2.5em;
+    margin-left: 2.5rem;
     max-width: 35%;
 }
 .top-desc>h3{
@@ -48,20 +50,26 @@ ul{
 button{
     background-color: #B5CA8D;
     color:black;
-    border-radius: 50px;
+    border-radius: 25%;
     border-color: black;
-    border-width: 2px;   
+    border-width: 2px;
 }
 
 .examples{
     display: flex;
     background-color: #231C07;
     width: 100%;
+    flex-direction: row;
     justify-content: space-around;
     margin-top: 20px;
     flex-wrap: wrap;
     padding-top: 4rem;
     padding-bottom: 4rem;
+}
+.examples>div{
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
 }
 .lion{
     transform: rotate(14deg);
@@ -80,6 +88,7 @@ button{
 .examples>div p{
     max-width: 50%;
     text-align: center;
+    font-size: 0.9rem;
 } 
 .destinations{
     display: flex;
@@ -88,9 +97,19 @@ button{
     flex-wrap: wrap;
     padding: 2rem;
 }
+@media screen and (min-width: 430px){
+    .examples>div{
+        text-align: center;
+    }
+}
+.destinations> div{
+    width: 25%;
+    text-align: center;
+}
 .destinations>div img{
-    max-width: 50%;
+    max-width: 10rem;
     height:auto;
+    object-fit: cover;
 }
 .experience-cont{
     background-color: #231C07;
@@ -108,6 +127,7 @@ button{
     box-shadow:2px 2px 2px 2px #B5CA8D;
     border-radius: 30%;
     margin: 2rem 0;
+    font-size: 0.9rem;
 }
 .experiences>div img{
     max-width: 60%;
