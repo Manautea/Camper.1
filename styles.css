@@ -58,7 +58,6 @@ button{
     background-color: #231C07;
     width: 100%;
     justify-content: space-around;
-    align-items: baseline;
     margin-top: 20px;
     flex-wrap: wrap;
     padding-top: 4rem;
