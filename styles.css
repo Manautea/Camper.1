@@ -56,19 +56,30 @@ button{
     background-color: #231C07;
     width: 100%;
     justify-content: space-around;
+    align-items: baseline;
     margin-top: 20px;
-    height: 90%vh;
     flex-wrap: wrap;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
-.examples>div{
-
+.lion{
+    transform: rotate(14deg);
+}
+.lion>img{
+    box-shadow: 2rem #B5CA8D;
+}
+.girraffe{
+    transform: rotate(-11.66deg);
 }
 .examples>div img{
-    max-width: 250px;
-    height: auto;
-    margin-top: 20px;
-
+    max-width: 40%;
+    padding: 0;
+    border-radius: 20%;
 }
+.examples>div p{
+    max-width: 50%;
+    text-align: center;
+} 
 .destinations{
     display: flex;
     width: 100%;
@@ -84,13 +95,20 @@ button{
 }
 .experiences{
     display: flex;
-    justify-content: space-around;
-    width: 100%;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
 }
 .experiences>div{
-    max-width: 30%;
+    max-width: 25%;
     color:#EEF8DC;
+    padding: 2rem;
+    box-shadow:2px 2px 2px 2px #B5CA8D;
+    border-radius: 30%;
+    margin: 2rem 0;
+}
+.experiences>div img{
+    max-width: 60%;
 }
 .call{
     display: flex;
