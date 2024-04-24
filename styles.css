@@ -81,8 +81,8 @@ button{
     transform: rotate(-11.66deg);
 }
 .examples>div img{
-    max-width: 40%;
-    padding: 0;
+    max-width: 50%;
+    min-width: 25%;
     border-radius: 20%;
 }
 .examples>div p{
@@ -90,26 +90,26 @@ button{
     text-align: center;
     font-size: 0.9rem;
 } 
-.destinations{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 2rem;
-}
-@media screen and (min-width: 430px){
+
+@media screen and (min-width: 30%){
     .examples>div{
         text-align: center;
     }
 }
-.destinations> div{
-    width: 25%;
-    text-align: center;
+.destinations{
+    display: flex;
+    width: 100%;
+    padding-top: 1rem;
+    flex-wrap: wrap;
 }
-.destinations>div img{
-    max-width: 10rem;
-    height:auto;
-    object-fit: cover;
+.destinations>div{
+    max-width: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.destinations>div>img{
+    max-width: 85%;
 }
 .experience-cont{
     background-color: #231C07;
@@ -121,13 +121,13 @@ button{
     justify-content: space-around;
 }
 .experiences>div{
-    max-width: 25%;
+    max-width: 20%;
     color:#EEF8DC;
     padding: 2rem;
     box-shadow:2px 2px 2px 2px #B5CA8D;
     border-radius: 30%;
     margin: 2rem 0;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 .experiences>div img{
     max-width: 60%;
